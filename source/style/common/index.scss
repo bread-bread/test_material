@@ -1,0 +1,33 @@
+.main-content {
+    padding-top: 60px;
+    @include w600 {
+        padding-top: 0;
+    }
+}
+.main-content__wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 1032px;
+    @include w1280 {
+        width: 768px;
+    }
+    @include w840 {
+        width: 505px;
+    }
+    @include w600 {
+        width: 100%;
+    }
+}
+.main-content__title {
+    margin-bottom: 37px;
+    width: 100%;
+    @include w600 {
+        display: none;
+    }
+}
+.main-content__cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+

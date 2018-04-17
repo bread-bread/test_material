@@ -1,0 +1,18 @@
+.mdc-card.site-card
+    .mdc-card__media.mdc-card__media--custom
+        .mdc-card__media-content.mdc-card__media-content--custom
+            img(src="./assets/img/content/site.jpg" alt="Ваш сайт").site-card__img
+            .site-card__edit.mdc-ripple-surface
+                i.material-icons.site-card__edit--icon(title="Редактировать") mode_edit
+    .site-card-content
+        .site-card-content__date.caption 15.04.2018
+        .site-card-content__name.title Название сайта
+    .mdc-card__actions.mdc-card__actions--custom
+        .mdc-card__action-buttons
+            button.mdc-button.mdc-button--custom.mdc-card__action.mdc-card__action--button Опубликовать
+        .mdc-card__action-icons
+            i(tabindex="0" 
+                role="button" 
+                title="Удалить"
+                class="delete-icon material-icons mdc-card__action mdc-card__action--icon mdc-ripple-surface mdc-ripple-upgraded")
+                | delete

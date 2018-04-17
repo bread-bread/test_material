@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Мои сайты</title>
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="./assets/css/foundation.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.css">
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.js" defer></script>
+    <script src="./assets/js/app.js" defer></script><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="wrapper mdc-typography">
+      <header class="header mdc-elevation--z4 mdc-top-app-bar" data-mdc-auto-init="MDCTopAppBar">
+        <div class="userBar mdc-top-app-bar__row">
+          <section class="mdc-top-app-bar__section">
+            <div class="mobile-nav"><a class="menu material-icons mdc-top-app-bar__navigation-icon">menu</a>
+              <div class="mobile-nav__item-name">Мои сайты </div>
+            </div><a class="logo" href="#"><img class="logo__img" alt="LPTREND" src="./assets/img/content/Logo.svg"></a><a class="user-avatar" href="#"><img class="user-avatar__img" alt="USER" src="./assets/img/content/User.svg"></a>
+          </section>
+        </div>
+        <div class="nav">
+          <nav class="mdc-tab-bar" data-mdc-auto-init="MDCTabBar"><a class="mdc-tab" href="#one">Шаблоны</a><a class="mdc-tab mdc-tab--active" href="#two">Мои сайты</a><a class="mdc-tab" href="#three">Настройки</a><a class="mdc-tab" href="#four">Платежи</a><span class="mdc-tab-bar__indicator"></span></nav>
+        </div>
+      </header>
+      <aside class="mdc-drawer mdc-drawer--temporary">
+        <nav class="mdc-drawer__drawer">
+          <header class="mdc-drawer__header header">
+            <div class="mdc-drawer__header-content">
+              <div class="user">
+                <div class="user-avatar user-avatar--big"><img class="user__img" alt="USER" src="./assets/img/content/User.svg"></div>
+                <div class="user-name">Иван Иванов</div>
+                <div class="user-email">ivanov@gmail.com</div>
+              </div>
+            </div>
+          </header>
+          <nav class="mdc-drawer__content">
+            <div class="mdc-list"><a class="mdc-list-item" href="#"><i class="material-icons mdc-list-item__graphic" aria-hidden="true">dashboard</i>Шаблоны</a><a class="mdc-list-item" href="#"><i class="material-icons mdc-list-item__graphic" aria-hidden="true">view_module</i>Мои сайты</a><a class="mdc-list-item" href="#"><i class="material-icons mdc-list-item__graphic" aria-hidden="true">settings</i>Настройки</a><a class="mdc-list-item" href="#"><i class="material-icons mdc-list-item__graphic" aria-hidden="true">account_balance_wallet</i>Платежи</a></div>
+          </nav>
+        </nav>
+      </aside>
+      <main class="main-content">
+        <div class="main-content__wrapper">
+          <div class="main-content__title mdc-typography--display1">Мои сайты</div>
+          <div class="main-content__cards">
+            <div class="site-card-new">
+              <div class="site-card-new__wrapper">
+                <div class="site-card-new__circle"><i class="material-icons site-card-new__circle--icon" title="Добавить сайт">add</i></div>
+                <div class="site-card-new__text title">Новый сайт</div>
+              </div>
+            </div>
+            <div class="mdc-card site-card">
+              <div class="mdc-card__media mdc-card__media--custom">
+                <div class="mdc-card__media-content mdc-card__media-content--custom"><img class="site-card__img" src="./assets/img/content/site.jpg" alt="Ваш сайт">
+                  <div class="site-card__edit mdc-ripple-surface"><i class="material-icons site-card__edit--icon" title="Редактировать">mode_edit</i></div>
+                </div>
+              </div>
+              <div class="site-card-content">
+                <div class="site-card-content__date caption">15.04.2018</div>
+                <div class="site-card-content__name title">Название сайта</div>
+              </div>
+              <div class="mdc-card__actions mdc-card__actions--custom">
+                <div class="mdc-card__action-buttons">
+                  <button class="mdc-button mdc-button--custom mdc-card__action mdc-card__action--button">Опубликовать</button>
+                </div>
+                <div class="mdc-card__action-icons"><i class="delete-icon material-icons mdc-card__action mdc-card__action--icon mdc-ripple-surface mdc-ripple-upgraded" tabindex="0" role="button" title="Удалить">delete</i></div>
+              </div>
+            </div>
+            <div class="mdc-card site-card">
+              <div class="mdc-card__media mdc-card__media--custom">
+                <div class="mdc-card__media-content mdc-card__media-content--custom"><img class="site-card__img" src="./assets/img/content/site.jpg" alt="Ваш сайт">
+                  <div class="site-card__edit mdc-ripple-surface"><i class="material-icons site-card__edit--icon" title="Редактировать">mode_edit</i></div>
+                </div>
+              </div>
+              <div class="site-card-content">
+                <div class="site-card-content__date caption">15.04.2018</div>
+                <div class="site-card-content__name title">Название сайта</div>
+              </div>
+              <div class="mdc-card__actions mdc-card__actions--custom">
+                <div class="mdc-card__action-buttons">
+                  <button class="mdc-button mdc-button--custom mdc-card__action mdc-card__action--button">Опубликовать</button>
+                </div>
+                <div class="mdc-card__action-icons"><i class="delete-icon material-icons mdc-card__action mdc-card__action--icon mdc-ripple-surface mdc-ripple-upgraded" tabindex="0" role="button" title="Удалить">delete</i></div>
+              </div>
+            </div>
+            <div class="mdc-card site-card">
+              <div class="mdc-card__media mdc-card__media--custom">
+                <div class="mdc-card__media-content mdc-card__media-content--custom"><img class="site-card__img" src="./assets/img/content/site.jpg" alt="Ваш сайт">
+                  <div class="site-card__edit mdc-ripple-surface"><i class="material-icons site-card__edit--icon" title="Редактировать">mode_edit</i></div>
+                </div>
+              </div>
+              <div class="site-card-content">
+                <div class="site-card-content__date caption">15.04.2018</div>
+                <div class="site-card-content__name title">Название сайта</div>
+              </div>
+              <div class="mdc-card__actions mdc-card__actions--custom">
+                <div class="mdc-card__action-buttons">
+                  <button class="mdc-button mdc-button--custom mdc-card__action mdc-card__action--button">Опубликовать</button>
+                </div>
+                <div class="mdc-card__action-icons"><i class="delete-icon material-icons mdc-card__action mdc-card__action--icon mdc-ripple-surface mdc-ripple-upgraded" tabindex="0" role="button" title="Удалить">delete</i></div>
+              </div>
+            </div>
+            <div class="mdc-card site-card">
+              <div class="mdc-card__media mdc-card__media--custom">
+                <div class="mdc-card__media-content mdc-card__media-content--custom"><img class="site-card__img" src="./assets/img/content/site.jpg" alt="Ваш сайт">
+                  <div class="site-card__edit mdc-ripple-surface"><i class="material-icons site-card__edit--icon" title="Редактировать">mode_edit</i></div>
+                </div>
+              </div>
+              <div class="site-card-content">
+                <div class="site-card-content__date caption">15.04.2018</div>
+                <div class="site-card-content__name title">Название сайта</div>
+              </div>
+              <div class="mdc-card__actions mdc-card__actions--custom">
+                <div class="mdc-card__action-buttons">
+                  <button class="mdc-button mdc-button--custom mdc-card__action mdc-card__action--button">Опубликовать</button>
+                </div>
+                <div class="mdc-card__action-icons"><i class="delete-icon material-icons mdc-card__action mdc-card__action--icon mdc-ripple-surface mdc-ripple-upgraded" tabindex="0" role="button" title="Удалить">delete</i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <nav class="footer-nav">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item"><a class="footer-nav__link mdc-button mdc-button--custom" href="#">Тарифы</a></li>
+            <li class="footer-nav__item"><a class="footer-nav__link mdc-button mdc-button--custom" href="#">Блог</a></li>
+            <li class="footer-nav__item"><a class="footer-nav__link mdc-button mdc-button--custom" href="#">Партнерская программа</a></li>
+            <li class="footer-nav__item"><a class="footer-nav__link mdc-button mdc-button--custom" href="#">Политика конфиденциальности</a></li>
+            <li class="footer-nav__item"><a class="footer-nav__link mdc-button mdc-button--custom" href="#">Поддержка</a></li>
+            <li class="footer-nav__item"><a class="footer-nav__link mdc-button mdc-button--custom" href="#">Пользовательское соглашение</a></li>
+          </ul>
+        </nav>
+        <ul class="socials">
+          <li class="socials__item"><a class="social__link" href="#">
+              <svg class="socials__icon">
+                <use xlink:href="./assets/img/icons/sprite.svg#vk"></use>
+              </svg></a></li>
+          <li class="socials__item"><a class="social__link" href="#">
+              <svg class="socials__icon">
+                <use xlink:href="./assets/img/icons/sprite.svg#fb"></use>
+              </svg></a></li>
+          <li class="socials__item"><a class="social__link" href="#">
+              <svg class="socials__icon">
+                <use xlink:href="./assets/img/icons/sprite.svg#ok"></use>
+              </svg></a></li>
+          <li class="socials__item"><a class="social__link" href="#">
+              <svg class="socials__icon">
+                <use xlink:href="./assets/img/icons/sprite.svg#tw"></use>
+              </svg></a></li>
+          <li class="socials__item"><a class="social__link" href="#">
+              <svg class="socials__icon">
+                <use xlink:href="./assets/img/icons/sprite.svg#gplus"></use>
+              </svg></a></li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+.user-avatar {
+    border-radius: 50%;
+    display: block;
+    overflow: hidden;
+    width: 32px;
+    height: 32px;
+}
+.user-avatar--big {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 19px;
+}
+.user-avatar__img {
+    display: block;
+    width: 100%;
+}
+.user-name {
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 3px;
+}
+.user-email {
+    color: #fff;
+}

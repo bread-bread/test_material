@@ -1,0 +1,18 @@
+//- -variables
+//- main colors
+$mainColor: #3f51b5;
+$btnHover: rgba(#3f51b5, 0.2);
+$ripple: rgba(#3f51b5, 0.4);
+$text: rgba(#000, 0.87);
+$textLight: rgba(#000, 0.54);
+$cardBg: rgba(204, 204, 204, 0.25);
+$cardIcon: #fff;
+$footerBg: #F5F5F5;
+// layout
+@import 'mixins/mixins';
+@import 'layout/font';
+@import 'layout/settings';
+// components
+@import 'components/**/*.*';
+@import 'common/**/*.*';
+

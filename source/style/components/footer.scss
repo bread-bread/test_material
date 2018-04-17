@@ -1,0 +1,38 @@
+.footer {
+    padding: 60px;
+    background-color: $footerBg;
+    @include w600 {
+        display: none;
+    }
+}
+.footer-nav {
+    margin-bottom: 40px;
+}
+.footer-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footer-nav__item {
+    margin-right: 16px;
+    margin-bottom: 8px;
+    .footer-nav__link {
+        color: $text;
+    }
+}
+.socials {
+    display: flex;
+    justify-content: center;
+}
+.socials__item {
+    margin-right: 24px;
+    
+    transition: opacity 20ms;
+    &:hover {
+        opacity: 0.85;
+    }
+}
+.socials__icon {
+    width: 24px;
+    height: 24px;
+}

@@ -1,0 +1,134 @@
+.site-card {
+    margin-bottom: 24px;
+    width: 240px;
+    height: 336px;
+    transition: box-shadow 15ms;
+    margin-right: 24px;
+    &:hover {
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2), 0px 3px 14px rgba(0, 0, 0, 0.12), 0px 8px 10px rgba(0, 0, 0, 0.14);
+        .site-card__edit {
+            opacity: 1;
+        }
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+    &:nth-child(4n+4) {
+        margin-right: 0;
+    }
+    @include w1280 {
+        &:nth-child(4n+4) {
+            margin-right: 24px;
+        }
+        &:nth-child(3n+3) {
+            margin-right: 0;
+        }
+    }
+    @include w840 {
+        &:nth-child(4n+4) {
+            margin-right: 24px;
+        }
+        &:nth-child(3n+3) {
+            margin-right: 24px;
+        }
+        &:nth-child(2n+2) {
+            margin-right: 0;
+        }
+    }
+    @include w600 {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+        cursor: pointer;
+        box-shadow: none;
+        padding: 14px 16px;
+        &:nth-child(4n+4) {
+            margin-right: 0;
+        }
+        &:nth-child(3n+3) {
+            margin-right: 0;
+        }
+        &:nth-child(2n+2) {
+            margin-right: 0;
+        }
+        &:hover {
+            box-shadow: none;
+            background-color: rgba(0, 0, 0, 0.16);
+            .site-card__edit {
+                opacity: 0;
+            }
+        }
+    }
+}
+.mdc-card__media--custom {
+    overflow: hidden;
+    &::before {
+        margin-top: 70%;
+    }
+    @include w600 {
+        width: 92px;
+        height: 72px;
+        order: 1;
+    }
+}
+.site-card__img {
+    display: block;
+    width: 100%;
+}
+.site-card__edit {
+    transition: opacity 15ms;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $cardBg;
+    cursor: pointer;
+}
+.site-card__edit--icon {
+    font-size: 36px;
+    color: $cardIcon;
+    @include centered();
+}
+.site-card-content {
+    padding: 24px;
+    @include w600 {
+        padding: 0;
+        width: 75%;
+    }
+}
+.site-card-content__name {
+    height: 50px;
+    overflow: hidden;
+    word-break: break-word;
+    @include w600 {
+        height: auto;
+    }
+}
+.mdc-card__actions--custom {
+    @include w600 {
+        display: none;
+    }
+}
+.mdc-card__action-icons .delete-icon {
+    color: $mainColor;
+}
+.mdc-button--custom {
+    &::before,
+    &::after {
+        background-color: $mainColor;
+    }
+}
+.delete-icon {
+    border-radius: 50%;
+    &::before,
+    &::after {
+        background-color: $mainColor;
+    }
+}

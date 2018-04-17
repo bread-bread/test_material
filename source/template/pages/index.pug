@@ -1,0 +1,21 @@
+extends ../_template
+include ../common/_mixins.pug
+
+block variables
+  - var title = 'Мои сайты';
+  
+block content
+  include ../components/header.pug
+  include ../components/sidebar.pug
+  main.main-content
+    .main-content__wrapper
+      .main-content__title.mdc-typography--display1 Мои сайты
+      .main-content__cards
+        include ../components/site_card_new.pug
+        include ../components/site_card.pug
+        include ../components/site_card.pug
+        include ../components/site_card.pug
+        include ../components/site_card.pug
+  include ../components/footer.pug
+        
+    

@@ -1,0 +1,43 @@
+.header {
+    background-color: $mainColor;
+}
+.mobile-nav {
+    display: none;
+    @include w600 {
+        display: flex;
+    }
+}
+.mobile-nav__item-name {
+    align-self: center;
+    margin-left: 16px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.logo {
+    @include w600 {
+        display: none;
+    }
+}
+.nav {
+    @include w600 {
+        display: none;
+    }
+}
+.mdc-top-app-bar__section {
+    justify-content: space-between;
+}
+.nav {
+    background-color: #fff;
+    width: 100%;
+}
+.mdc-tab::before,
+.mdc-tab::after {
+    background-color: $ripple;
+}
+.mdc-tab:hover {
+    background-color: $btnHover;
+}
+.mdc-tab-bar__indicator {
+    background-color: $mainColor;
+}

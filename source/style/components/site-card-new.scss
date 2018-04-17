@@ -1,0 +1,59 @@
+.site-card-new {
+    margin-bottom: 24px;
+    width: 240px;
+    height: 336px;
+    border: 2px dashed $mainColor;
+    border-radius: 2px;
+    margin-right: 24px;
+    position: relative;
+    cursor: pointer;
+    @include w600 {
+        width: 56px;
+        height: 56px;
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        border: none;
+        background-color: $mainColor;
+        border-radius: 50%;
+        transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1), opacity 15ms linear 30ms;
+        box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+        &:hover {
+            box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+            opacity: 0.93;
+        }
+    }
+}
+.site-card-new__wrapper {
+    @include centered();
+}
+.site-card-new__circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px dashed $mainColor;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    position: relative;
+    @include w600 {
+        width: 56px;
+        height: 56px;
+        border: none;
+        position: static;
+    }
+}
+.site-card-new__circle--icon {
+    font-size: 48px;
+    color: $mainColor;
+    @include centered();
+    @include w600 {
+        color: #fff;
+        font-size: 24px;
+    }
+}
+.site-card-new__text {
+    color: $mainColor;
+    @include w600 {
+        display: none;
+    }
+}
